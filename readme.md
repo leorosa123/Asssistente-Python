@@ -1,9 +1,9 @@
-<h1>Seja bem vindo(a)!! A Clary a assistente python vai te ajudar nessa jornada automatica </h1>
+<h1>Seja bem vindo(a)!! A Clary assistente python vai te ajudar nessa jornada automatica </h1>
 <h3>Quem é Clary?</h3>
 <p>Clary é a assistente Python que te acompanha durante suas iterações com o programa, geralmente ela aparece para te dar dicas e auxilos em cada ação do programa. </p>
 
 <h3>Como usar o programa?</h3>
-<p>Abra o arquivo python principal (terminal_ytbr.py) em seu CMD, atencão para onde o arquivo está localizado em sua máquina, após isso espere a mensagem da assistente com as instruções.
+<p>Abra o arquivo python principal (terminal_ytbr.py) em seu CMD, atencão para onde o arquivo está localizado em sua máquina, após isso, espere a mensagem da assistente com as instruções.
 </p>
 
 <h3>Cuidados com o programa:</h3>
