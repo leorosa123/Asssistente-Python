@@ -24,3 +24,6 @@
 <p>User: clary_dev_program_33-22</p>
 <p>Password: ["bot-22-23", "bot-33-66", "bot-20-10", "bot-55-66"]</p>
 <p>Você tem 3 chances para tentar logar com alguma dessas senhas sorteadas pelo programa, a proposta é criar uma segurança mais robusta caso usuarios tentem invadir esse setor.</p>
+
+<h3> Cuidado com seu driver </h3>
+<p>A automação tem como peça chave o controle do google chrome, então fique atento com a versão de seu navegador para utilizar o driver mais recente e evitar erros  </p>
