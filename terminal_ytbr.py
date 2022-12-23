@@ -47,7 +47,7 @@ class inputs_youtube_on:
                 sleep(2)
                 self.user_on.search_video(search_yt)
 
-            if command_user == 'play_yt':
+            if command_user == "uk_play":
                 print("Estou colocando seu vídeo <;-;>...")
                 sleep(2)
                 self.user_on.play_video()

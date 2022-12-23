@@ -103,7 +103,7 @@ class python_video_search:
                 self.youtube.find_element(By.NAME, "search_query").send_keys(Keys.ENTER)
                 sleep(2)
                 self.youtube.find_element(By.XPATH,
-                                          '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a').click()
+                                          '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div[2]/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]').click()
                 sleep(define_time)
                 self.musc_tocadas.append(musica)
                 for char in range(140):
@@ -149,11 +149,15 @@ class python_video_search:
         :type -> INT
         :return -> Clique da reprodução de acordo com o param time
         """
+        # for char in range(140):
+        #   self.youtube.find_element(By.NAME, "search_query").send_keys(Keys.LEFT + Keys.DELETE)
+
+        self.youtube.find_element(By.XPATH,
+                                  '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div[2]/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]').click()
+        self.musc_tocadas.append(self.musc_play)
+
         for char in range(140):
             self.youtube.find_element(By.NAME, "search_query").send_keys(Keys.LEFT + Keys.DELETE)
-        self.youtube.find_element(By.XPATH,
-                                  '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a').click()
-        self.musc_tocadas.append(self.musc_play)
 
     def search_video_by_link(self, link_music):
         """
@@ -178,18 +182,18 @@ class python_video_search:
                 faixa.write(f"  faixa: -[ {item} ]- Data: {datetime.today().strftime('%d/%m/%Y %H:%M')}\n")
         self.musc_tocadas.clear()
 
-        print("=-"*80)
+        print("=-" * 80)
         with open("file_write_faixas", "r+") as ler:
             for line in ler.readlines():
                 print(line)
-        print("=-"*80)
+        print("=-" * 80)
 
     def lixeira_historico(self):
-        print("=-"*80)
+        print("=-" * 80)
         print(" ALERTA: Após fechar uma sessão o historico é limpado!!")
         if not self.lixeira:
             print(" Clary não encontrou faixas apagadas!!")
         else:
             for id, item in enumerate(self.lixeira):
                 print(f"    item {id} faixa: [{item}]")
-        print("=-"*80)
+        print("=-" * 80)
